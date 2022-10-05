@@ -1,19 +1,24 @@
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
-
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-around;
   color: white;
   background: #1F2937;
   align-items: center;
-    
+}
+
+.footer {
+  padding: 2%;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   color: #F9FAF8;
   padding: 0;
   margin: 0;
@@ -35,7 +40,7 @@ li {
 .subtitle,
 a {
   color: #E5E7EB;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .subtitle {
@@ -52,15 +57,16 @@ a {
   background: #1F2937;
   justify-content: space-around;
   align-items: stretch;
-  padding: 5vh 15vw
+  padding: 3vh 15vw
 }
 
 .title-text {
-  width: 30vw;
+  width: 35vw;
+  margin-right: 30px;
 }
 
 .title {
-  font-size: 48px;
+  font-size: 40px;
   color: #F9FAF8;
   padding: 0;
   margin: 0;
@@ -76,17 +82,14 @@ a {
   color: white;
 }
 
-.signup {
+
+button {
   color: #F9FAF8;
   font-weight: bold;
   background: #3882F6;
   border: 0px;
   border-radius: 4px;
   padding: 5px 20px;
-}
-
-.foot {
-  border: 2px #F9FAF8;
 }
 
 .illustrations {
@@ -98,13 +101,16 @@ a {
 h2 {
   font-size: 36px;
   font-weight: bolder;
-  color: #1F2937
+  color: #1F2937;
+  margin: 30px 0 0 0;
+  padding: 0;
 }
 
 .info-tiles {
   display: flex;
-  gap: 40px;
-  padding: 3vh 0 7vh;
+  gap: 30px;
+  padding: 2vh 0 5vh;
+  flex-wrap: wrap;
 }
 
 .tile-block {
@@ -114,8 +120,8 @@ h2 {
 }
 
 .img-tile {
-  width: 130px;
-  height: 115px;
+  width: 100px;
+  height: 100px;
   border: 3px solid #3882F6;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -131,11 +137,11 @@ h2 {
   background: #E5E7EB;
   display: flex;
   justify-content: center;
-  padding: 5%;
+  padding: 6%;
 }
 
 .quote-text {
-  width: 50%;
+  width: 60%;
   height: 15%;
   display: flex;
   flex-direction: column;
@@ -143,7 +149,7 @@ h2 {
 }
 
 .quote-text p {
-  font-size: 36px;
+  font-size: 26px;
   font-style: italic;
   color: #1F2937;
   margin: 0;
@@ -152,5 +158,31 @@ h2 {
 .quote-text span {
   font-weight: bold;
   align-self: flex-end;
-  margin-right: 20px;
+  margin: 10px 20px 0 0;
+}
+
+.signup-section {
+  background: #3882F6;
+  margin: 5% 15%;
+  padding: 2% 10%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.signup-text {
+  color: #F9FAF8;
+  margin: 3px;
+}
+
+.signup-text h3 {
+  margin: 0;
+  padding: 0 0 2px 0;
+  font-size: 24px;
+}
+
+.signup-foot {
+  border: 1px solid #F9FAF8;
+  margin-bottom: 5px;
 }
